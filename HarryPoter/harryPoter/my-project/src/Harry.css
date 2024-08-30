@@ -1,0 +1,83 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ .App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+} 
+
+.head{
+  color: #b32ae5;
+  background-color: aliceblue;
+  border-radius: 1.8rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Spell list container */
+.spell-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Individual spell card */
+.spell-card {
+  background-color: #000000;
+  border: 1px solid #e52a2a;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(25%-20px);
+  
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.spell-card h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.spell-card p {
+  color: #81dc0a;
+  margin: 5px 0;
+}
+
+/* Hover effect for spell cards */
+.spell-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .spell-list {
+    width: calc(20%-10px);
+    
+  }
+  .App {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .spell-list {
+    width: calc(20%-10px);
+  }
+ 
+}

@@ -1,0 +1,119 @@
+/* General styling for the app */
+*{background-color: #000000;}
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+} 
+
+ /*Flexbox container for image and button */
+ .image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: cover;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  background-color: #109bf1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+} 
+.h1{
+  display: flex;
+display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background-color: #f14110;
+  width: 50%;
+  margin-left: 16rem;
+  border-radius: 2rem;
+}
+
+ /* Styling for the image */
+ img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+} 
+
+ img:hover {
+  transform: scale(1.05);
+} 
+
+/* Styling for the button */
+.Botton {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: solid rgb(239, 239, 239) 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+
+} 
+ button:hover {
+  background-color: #45a049;
+} 
+
+/* Responsive Design */
+ @media (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .h1 {
+   width: 80%;
+    font-size: 1.8rem;
+    margin-left: 30px;
+
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .App {
+    padding: 10px;
+  }
+
+  
+
+
+} 
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .App {
+    padding: 10px;
+  }
+}
+
+
+
